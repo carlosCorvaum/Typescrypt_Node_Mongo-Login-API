@@ -1,13 +1,13 @@
 API com metodos de:
 
 -Criar usuario<br>
--Deleter usuario
--Criptografar senha do usuario
--Listar todos os usuarios cadastrados
-
-Utilizou-se Typescrypt, node.js(express) e mongoDB.
-
-novas tarefas:
--Criar um usuario a partir de um input label
--Logar
--Deslogar
+-Deleter usuario<br>
+-Criptografar senha do usuario<br>
+-Listar todos os usuarios cadastrados<br>
+<br>
+Utilizou-se Typescrypt, node.js(express) e mongoDB.<br>
+<br>
+novas tarefas:<br>
+-Criar um usuario a partir de um input label<br>
+-Logar<br>
+-Deslogar<br>
