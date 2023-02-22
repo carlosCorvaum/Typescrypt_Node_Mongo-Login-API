@@ -1,6 +1,6 @@
 API com metodos de:
 
--Criar usuario
+-Criar usuario<br>
 -Deleter usuario
 -Criptografar senha do usuario
 -Listar todos os usuarios cadastrados
