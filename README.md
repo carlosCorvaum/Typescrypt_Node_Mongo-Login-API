@@ -7,7 +7,3 @@ API com metodos de:
 <br>
 Utilizou-se Typescrypt, node.js(express) e mongoDB.<br>
 <br>
-novas tarefas:<br>
--Criar um usuario a partir de um input label<br>
--Logar<br>
--Deslogar<br>
