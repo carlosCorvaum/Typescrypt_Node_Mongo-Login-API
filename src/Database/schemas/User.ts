@@ -17,7 +17,6 @@ const User = new mongoose.Schema({
     pass: {
         type: String,
         require: true,
-        select: false,
     },
     createdAt: {
         type: Date,

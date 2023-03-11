@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import User from "../Database/schemas/User";
-
+import bcrypt from 'bcrypt';
 
 class userController {
 
@@ -17,7 +17,7 @@ class userController {
             }
         } catch (error) {
             return response.status(500).send({
-                error: "Registration failed",
+                error: " failed",
                 message: error.message
             })
         }
@@ -61,6 +61,39 @@ class userController {
         catch (error) {
             return response.status(500).send({
                 error: "Registration failed",
+                message: error
+            })
+        }
+    }
+    async login(request: Request, response: Response) {
+
+        const { email, pass } = request.body;
+
+        const userExist = await User.findOne({ email });
+        try {
+            if (userExist) {
+
+                const hashPass = await bcrypt.hash(pass, 12);
+
+                bcrypt.compare(pass, userExist.pass, function (err, result) {
+                    console.log(result);
+                    if (result) {
+                        return response.status(201).send({
+                            message: "Logado"
+                        })
+                    }
+                    else {
+                        return response.status(400).send({
+                            message: "Senha incorreta"
+                        })
+                    }
+                });
+
+            }
+        }
+        catch (error) {
+            return response.status(500).send({
+                error: "Algo deu errado",
                 message: error
             })
         }
