@@ -1,5 +1,5 @@
-To Do
--Melhorar a pagina de login
--Pagina de usuario com opções de:
-*Deletar usuario
+To Do <br>
+-Melhorar a pagina de login<br>
+-Pagina de usuario com opções de:<br>
+*Deletar usuario<br>
 *Postar alguma coisa
