@@ -1,4 +1,4 @@
-/* Estilos para o corpo da página */
+
 html{
     height: 100%;
 }
@@ -10,7 +10,7 @@ body {
     background-color: #1E1E1E;
 }
 
-/* Estilos para o formulário de login */
+
 .login-painel {
     display: flex;
     flex-direction: column;
@@ -27,17 +27,17 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    width: 100%; /* Largura total da etiqueta */
+    width: 100%; 
 }
 
 .login-painel input[type="email"],
 .login-painel input[type="password"] {
-    width: 100%; /* Largura total do campo de entrada */
+    width: 100%; 
     padding: 10px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    margin-bottom: 10px; /* Margem inferior menor */
-    box-sizing: border-box; /* Garante que o preenchimento seja incluído na largura total */
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
 }
 
 .login-painel input[type="button"] {
@@ -46,7 +46,6 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    cursor: pointer;
 }
 
 .login-painel input[type="button"]:hover {
